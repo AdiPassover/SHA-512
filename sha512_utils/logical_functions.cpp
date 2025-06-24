@@ -3,7 +3,6 @@
 uint64_t SHR(uint64_t x, unsigned int n);
 uint64_t ROTR(uint64_t x, unsigned int n);
 
-constexpr unsigned int NUM_FUNCTION_CONSTANTS = 3;
 constexpr unsigned int BIG_SIGMA0_CONSTANTS[] = { 28, 34, 39 };
 constexpr unsigned int BIG_SIGMA1_CONSTANTS[] = { 14, 18, 41 };
 constexpr unsigned int SIGMA0_CONSTANTS[]     = { 1, 8, 7 };

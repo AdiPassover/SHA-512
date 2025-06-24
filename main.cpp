@@ -51,7 +51,7 @@ ByteVector file_to_bytes(char* file_path) {
         throw std::runtime_error("Could not open file: " + std::string(file_path));
     }
 
-    uint8_t buffer[1024];
+    uint8_t buffer[2<<21];
     size_t bytes_read;
     while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0) {
         bytes.insert(bytes.end(), buffer, buffer + bytes_read);

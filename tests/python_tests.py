@@ -90,7 +90,7 @@ def test_vectors(json_file):
             print(f"expected vs actual:")
             print(f"{expected}\n{output}{RESET}")
         else:
-            input_str = str(input_value) if len(input_value) < 50 else str(input_value[:50]) + f"... (length: {len(input_value)})"
+            input_str = str(input_value) if len(input_value) < 50 else str(input_value[:50]) + f"... ({len(input_value)} bytes)"
             print(f"{GREEN}Test passed for input: {input_str}{RESET}")
 
 
