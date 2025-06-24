@@ -7,7 +7,7 @@ namespace preprocessing {
     ByteVector pad(const ByteVector &data) {
         ByteVector padded_data = data;
         padded_data.push_back(0x80);
-        while ((data.size() * 8) % (BLOCK_SIZE*8) != (BLOCK_SIZE*8)-BLOCK_SIZE) {
+        while ((padded_data.size() * 8) % (BLOCK_SIZE*8) != (BLOCK_SIZE*8)-BLOCK_SIZE) {
             padded_data.push_back(0x00);
         }
 

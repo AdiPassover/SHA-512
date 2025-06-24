@@ -3,6 +3,8 @@
 #include "logical_functions.hpp"
 #include "constants.hpp"
 
+#include <iostream>
+
 
 Hash sha512::hash(const ByteVector &data) {
     ByteVector padded_data = preprocessing::pad(data);

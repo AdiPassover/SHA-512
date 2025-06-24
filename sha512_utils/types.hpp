@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <array>
 #include <vector>
+#include <cstddef>
 
 constexpr size_t BLOCK_SIZE = 128; // SHA-512 block size in bytes (1024 bits)
 constexpr size_t HASH_SIZE = 64; // SHA-512 hash size in bytes (512 bits)
