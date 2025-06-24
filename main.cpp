@@ -60,7 +60,3 @@ ByteVector file_to_bytes(char* file_path) {
     fclose(file);
     return bytes;
 }
-
-
-// TODO test application with test vectors
-// TODO organize
